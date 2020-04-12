@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-prismic",
+  "version": "1.0.0",
+  "description": "My astounding Nuxt.js project",
+  "author": "jaubut",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/prismic": "^1.1.0",
+    "cookies": "^0.8.0",
+    "nuxt": "^2.11.0",
+    "prismic-javascript": "^2.1.5",
+    "prismic-vue": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.5"
+  }
+}

@@ -1,0 +1,102 @@
+<template>
+  <div class="container">
+    <div class="swiper swiper-visible-sides py-5">
+      <div id="slider-customers-6" class="swiper-container row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide col-12 col-md-4">
+            <p class="lead mb-3">
+              “All base UI elements are made using Nested Symbols and shared styles that are logically connected. Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”
+            </p>
+            <div class="media align-items-center">
+              <div class="mr-2">
+                <img class="rounded" src="@/assets/pictures/userpic.png" width="60" height="60">
+              </div>
+              <div class="media-body">
+                <p class="mb-0">
+                  <span class="weight-500">Name Surname</span>
+                </p>
+                <p class="small mb-0">
+                  Founder, Acme Company
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-12 col-md-4">
+            <p class="lead mb-3">
+              “Kids ages 8 to 12 can expand their digital creativity through hands-on projects at Apple. Campers choose one of three tracks, then spend 90 minutes a day for three days. Gorgeous, high-quality video sharing on desktop, mobile, tablet.”
+            </p>
+            <div class="media align-items-center">
+              <div class="mr-2">
+                <img class="rounded" src="@/assets/pictures/userpic.png" width="60" height="60">
+              </div>
+              <div class="media-body">
+                <p class="mb-0">
+                  <span class="weight-500">Name Surname</span>
+                </p>
+                <p class="small mb-0">
+                  Founder, Acme Company
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-12 col-md-4">
+            <p class="lead mb-3">
+              “Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”
+            </p>
+            <div class="media align-items-center">
+              <div class="mr-2">
+                <img class="rounded" src="@/assets/pictures/userpic.png" width="60" height="60">
+              </div>
+              <div class="media-body">
+                <p class="mb-0">
+                  <span class="weight-500">Name Surname</span>
+                </p>
+                <p class="small mb-0">
+                  Founder, Acme Company
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-12 col-md-4">
+            <p class="lead mb-3">
+              “All base UI elements are made using Nested Symbols and shared styles that are logically connected. Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”
+            </p>
+            <div class="media align-items-center">
+              <div class="mr-2">
+                <img class="rounded" src="@/assets/pictures/userpic.png" width="60" height="60">
+              </div>
+              <div class="media-body">
+                <p class="mb-0">
+                  <span class="weight-500">Name Surname</span>
+                </p>
+                <p class="small mb-0">
+                  Founder, Acme Company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><a id="slider-customers-6-prev" class="carousel-control-prev carousel-control-outside" href="">
+        <div class="carousel-control-prev-icon" />
+      </a><a id="slider-customers-6-next" class="carousel-control-next carousel-control-outside" href="">
+        <div class="carousel-control-next-icon" />
+      </a>
+    </div>
+  </div>
+</template>
+
+<script>
+/*
+var mySwiper = new Swiper('#slider-customers-6', {
+    speed: 400,
+    navigation: {
+      nextEl: '#slider-customers-6-next',
+      prevEl: '#slider-customers-6-prev',
+    },
+    slidesPerView: 'auto'
+  });
+*/
+export default {
+  name: 'Customers6'
+}
+</script>
