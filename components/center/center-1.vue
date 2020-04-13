@@ -6,7 +6,12 @@
           <h4 class="text-secondary">
             {{ tagline }}
           </h4>
-          <h1 class="display-4 text-primary" :v-html="headline" /><a class="action-link" target="_blank" :href="link1"><span>{{ linktitle }}</span></a>
+          <h1 class="display-4 text-primary">
+            {{ headline }}
+          </h1>
+          <a class="action-link" target="_blank" :href="link1">
+            <span>{{ linktitle }}</span>
+          </a>
         </div>
       </div>
     </div>

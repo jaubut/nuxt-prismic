@@ -17,7 +17,7 @@ export default {
     ],
     script: [
       { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' },
-      { src: 'https://kit.fontawesome.com/c481316e30.js', crossorigin: 'anonymous'}
+      { src: 'https://kit.fontawesome.com/c481316e30.js', crossorigin: 'anonymous' }
     ]
   },
   /*

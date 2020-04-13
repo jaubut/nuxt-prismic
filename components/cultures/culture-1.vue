@@ -27,9 +27,7 @@
               <input type="submit" class="btn btn-lg btn-primary" name="submit" value="Let's Go">
             </div>
           </form>
-          <div class="small">
-            {{ text }}<a class="text-dark weight-500" href=""><span>{{ linkText }}</span></a>
-          </div>
+          <prismic-rich-text class="small" :field="text" />
         </div>
       </div>
     </div>
