@@ -11,28 +11,30 @@
       />
     </div>
     <center9
-      logo="index.fields.center9.fields.logo.fields.file.url"
-      header="index.fields.center9.fields.headline"
-      text="index.fields.center9.fields.text1"
+      :logo="index.body[1].items[0].logo.url"
+      :header="index.body[1].primary.headline"
+      :text="$prismic.asText(index.body[1].primary.rich_text)"
     />
-    <right16
+    <!--<right16
       id="apropos"
-      :image="center.body[0].primary.image_banner"
-      logo="index.fields.right16.fields.logo1.fields.file.url"
-      :headline="$prismic.asText(center.body[0].primary.title_of_banner)"
-      :text="center.body[0].primary.description"
-    />
+      image="index.body[2].items[0].image.url"
+      logo="index.body[1].items[0].logo.url"
+      :headline="$prismic.asText(index.body[2].primary.headline)"
+      :text="$prismic.asText(index.body[2].primary.rich_text)"
+    />-->
     <texts2
       id="ressource"
-      tagline="index.fields.texte2.fields.tagline"
-      headline="index.fields.texte2.fields.headline"
+      :tagline="index.body[3].primary.tagline"
+      :headline="$prismic.asText(index.body[3].primary.headline)"
     />
-    <grids5 />
+    <grids5
+      :items="index.body[4].items"
+    />
     <center1
-      tagline="Don"
-      headline="document.data.center.headline"
-      link1="https://www.paypal.com/paypalme/rejtherhotmailcom"
-      linktitle="Nous soutenir via PayPal"
+      :tagline="$prismic.asText(index.body[5].primary.tagline)"
+      :headline="$prismic.asText(index.body[5].primary.headline)"
+      :link1="index.body[5].primary.link1"
+      :linktitle="$prismic.asText(index.body[5].primary.link1_label)"
     />
   </div>
 </template>
@@ -49,7 +51,7 @@ export default {
 
       return {
         // Page content
-        center: homepage
+        index: homepage
       }
     } catch (e) {
       error({ statusCode: 404, message: 'Page not found' })
