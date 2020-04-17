@@ -177,6 +177,7 @@ import texts21 from '@/components/texts/texts-21'
 import texts22 from '@/components/texts/texts-22'
 
 import culture1 from '@/components/cultures/culture-1'
+import pensedujour from '@/components/cultures/pense-du-jour'
 
 Vue.component('center1', center1)
 Vue.component('center2', center2)
@@ -356,3 +357,4 @@ Vue.component('texts21', texts21)
 Vue.component('texts22', texts22)
 
 Vue.component('culture1', culture1)
+Vue.component('pensedujour', pensedujour)

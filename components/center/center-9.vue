@@ -15,6 +15,19 @@
 <script>
 export default {
   name: 'Center9',
-  props: ['logo', 'header', 'text']
+  props: {
+    logo: {
+      type: String,
+      default: 'allo'
+    },
+    header: {
+      type: String,
+      default: 'allo'
+    },
+    text: {
+      type: String,
+      default: 'allo'
+    }
+  }
 }
 </script>

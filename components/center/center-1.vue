@@ -23,6 +23,23 @@ export default {
   name: 'Center1',
   components: {
   },
-  props: ['tagline', 'headline', 'link1', 'linktitle']
+  props: {
+    tagline: {
+      type: String,
+      default: 'allo'
+    },
+    headline: {
+      type: String,
+      default: 'allo'
+    },
+    link1: {
+      type: String,
+      default: 'https://google.com'
+    },
+    linktitle: {
+      type: String,
+      default: 'allo'
+    }
+  }
 }
 </script>

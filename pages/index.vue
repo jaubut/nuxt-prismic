@@ -22,8 +22,10 @@
       :headline="index.body[2].primary.headline"
       :text="index.body[2].primary.rich_text"
     />
+    <pensedujour />
     <texts2
       id="ressource"
+      classes="centercenter"
       :tagline="index.body[3].primary.tagline"
       :headline="$prismic.asText(index.body[3].primary.headline)"
     />
@@ -36,11 +38,15 @@
       :link1="index5.primary.link1"
       :linktitle="index5.primary.link1_label"
     />
-    <div>
-      <audio controls>
-        <source src="https://soundcloud.com/pensee-du-jour/ps-91-v-14" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
+    <div class="fix-bottom">
+      <iframe
+        id="sc-widget"
+        src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/users/157602472"
+        width="100%"
+        height="164"
+        scrolling="no"
+        frameborder="no"
+      />
     </div>
     <footers8 />
   </div>
@@ -74,5 +80,11 @@ export default {
   background-position: center center;
   background-size: cover;
   min-height: 70vh;
+}
+.fix-bottom {
+  bottom: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 99999;
 }
 </style>
